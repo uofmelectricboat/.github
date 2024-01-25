@@ -15,13 +15,13 @@ Projects marked with an asterisk are not yet started. Questions? Please contact 
 
 ## VCU Programming
 
-The Vehicle Control Unit (VCU) is essentially the central processing unit of the boat. It activates electrical components, records important data, and controls elements like sensors and actuators. It also serves as the central communication hub between different parts of the boat via the Controller Area Network (CAN) bus. The CAN bus is a vehicle bus standard that allows the sensors, actuators, and microcontrollers on the boat to communicate.
+The Vehicle Control Unit (VCU) is essentially the central processing unit of the boat. It activates electrical components, records important data, and controls elements like sensors and actuators. It also serves as the central communication hub between different parts of the boat via the Controller Area Network (CAN) bus, a vehicle bus standard that allows microcontrollers and devices on the boat to communicate with each other without a host computer.
 
 We use the [Raptor General Control Model GCM196](https://store.neweagle.net/shop/raptor/raptor-hardware/raptor-controllers-with-software/1793-196-1503-general-control-module-raptor/) as our VCU.
 
 ### Raptor Toolchain
 
-The electronic hardware components on our boat (like sensors and actuators) are programmed using software provided by New Eagle. We have free access to New Eagle’s Raptor Toolchain (i.e. Raptor-Dev and Raptor Cal) ($9600 worth of software!), courtesy of our use of the Raptor GCM.
+The electronic hardware components on our boat (like sensors and actuators) are programmed using software provided by New Eagle. We have free access to New Eagle’s Raptor Toolchain (i.e. Raptor-Dev and Raptor Cal) ($9600 worth of software!) due to our use of the Raptor GCM.
 
 #### Programming Environment
 
@@ -74,7 +74,7 @@ Qt’s Serial Bus module allows us to access the CAN bus via the VectorCAN plugi
 * [VectorCAN plugin](https://doc.qt.io/qt-6/qtserialbus-vectorcan-overview.html)
 
 #### Licensing
-Qt is a free tool under GPLv3 and LGPLv3. Software created with Qt can be released under any open source license.
+Qt is a free tool under GPLv3 and LGPLv3. Software created with Qt can be released under any approved open source license.
 
 ### Warning System
-In the event of any issues, the main display must promptly alert the driver. We use a color-coded system to indicate operational health: yellow denotes warning levels, while red signifies a dangerous state. However, it is not always safe to assume that the driver is continuously monitoring the display. Therefore, a stretch goal for this project is to incorporate an audible alarm system, which would alert the driver when they need to check the display for potential issues.
+In the event of any issues, the main display must promptly alert the driver. We use a color-coded system to indicate operational health: yellow denotes warning levels, while red signifies a dangerous state. However, it is not always safe to assume that the driver is continuously monitoring the display. A stretch goal for this project is to incorporate an audible alarm system, which would alert the driver when they need to check the display for potential issues.
