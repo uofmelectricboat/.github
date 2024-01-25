@@ -1,6 +1,6 @@
 # UMEB Software Projects
 
-The list below provides an overview of the main software projects on the University of Michigan Electric Boat team:
+Main software projects on the University of Michigan Electric Boat team:
 * [VCU programming](#vcu-programming) (MATLAB Simulink, CANalyzer)
 * [Driver display](#driver-display) (Qt, QML, C++)
 * Website development (HTML/CSS, Javascript)
@@ -8,7 +8,9 @@ The list below provides an overview of the main software projects on the Univers
 * Shore display*
 * Data analytics*
 
-Projects marked with an asterisk are not yet started. Questions? Please contact these team members:
+Projects marked with an asterisk are not yet started.
+
+Questions? Please contact these team members:
 * Michael Sharashenidze (msharash), Electrical Lead
 * Adam Lake (adamlake), Controls Lead
 * Megan Miller (megmil), Software Engineer
