@@ -45,8 +45,8 @@ For more details or access to the Lucidchart file, contact the Electrical Lead.
 
 The driver display is the main dashboard inside the boat, displaying essential information for the driver to check with a glance. It implements the following hardware components in the driver display:
 
-* Tablet: [Dell Latitude 12 Rugged Tablet](https://www.dell.com/support/manuals/en-us/latitude-7202-tablet/lat12rugged7202_ug/specifications?guid=guid-dc9c68cb-09a4-4844-b470-4bb1e155c8b1&lang=en-us)
-* CAN adapter: [Vector VN1610](https://www.vector.com/us/en/products/products-a-z/hardware/network-interfaces/vn16xx/#c66319) (connects to tablet via USB)
+* **Tablet**: [Dell Latitude 12 Rugged Tablet](https://www.dell.com/support/manuals/en-us/latitude-7202-tablet/lat12rugged7202_ug/specifications?guid=guid-dc9c68cb-09a4-4844-b470-4bb1e155c8b1&lang=en-us)
+* **CAN adapter**: [Vector VN1610](https://www.vector.com/us/en/products/products-a-z/hardware/network-interfaces/vn16xx/#c66319) (connects to tablet via USB)
 
 We designed this display based on those of similar speedboats, simplifying last year’s Snowfinkle dashboard.
 
