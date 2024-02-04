@@ -19,7 +19,7 @@ Questions? Please contact these team members:
 
 The Vehicle Control Unit (VCU) is essentially the central processing unit of the boat. It activates electrical components, records important data, and controls elements like sensors and actuators. It also serves as the central communication hub between different parts of the boat via the Controller Area Network (CAN) bus, a vehicle bus standard that allows microcontrollers and devices on the boat to communicate with each other without a host computer.
 
-We use the [Raptor General Control Model GCM48](https://store.neweagle.net/shop/raptor/raptor-hardware/raptor-controllers-with-software/1793-196-1503-general-control-module-raptor/) as our VCU.
+We use the [Raptor General Control Model GCM48](https://store.neweagle.net/shop/raptor/raptor-hardware/raptor-controllers-with-software/raptor-general-control-module-gcm48-2/) as our VCU. Note that you need a New Eagle account (which takes about a week to get approved) to view the documentation on the New Eagle / New Eagle Wiki site.
 
 ### Raptor Toolchain
 
