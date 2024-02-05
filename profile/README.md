@@ -3,7 +3,12 @@
 ## Overview
 
 Main software projects on the University of Michigan Electric Boat team:
-* [VCU programming](#vcu-programming) (MATLAB Simulink, CANalyzer)
+* [VCU programming](#vcu-programming) (MATLAB Simulink, CANalyzer, Kvaser Database Editor, Raptor Toolkit)
+  * [Programming Environment Overview](#programming-environment-overview)
+    * [Getting Started: Setup Guide & Platform Compatibility](#getting-started:-setup-guide-&-platform-compatibility)
+  * [Making the CAN DBC Files: Kvaser Database Editor](#making-the-can-dbc-files:-kvaser-database-editor)
+  * [Programming the CAN Bus: CANalyzer](#programming-the-can-bus:-canalyzer)
+  * [Programming the VCU: MATLAB Simulink + Raptor Toolkit](#programming-the-vcu:-matlab-simulink-+-raptor-toolkit)
 * [Driver display](#driver-display) (Qt, QML, C++)
 * Website development (HTML/CSS, Javascript)
 * Debug display*
@@ -35,11 +40,11 @@ We use the [Raptor General Control Model GCM48](https://store.neweagle.net/shop/
 
 ### Programming Environment Overview
 
-The electronic hardware components on our boat (like sensors and actuators) are programmed using software provided by New Eagle. We have free access to New Eagle’s Raptor Toolchain (i.e. Raptor-Dev and Raptor Cal) ($9600 worth of software!) due to our use of the Raptor GCM.
+The electronic hardware components on our boat (like sensors and actuators) are programmed using software provided by New Eagle. We have free access to New Eagle’s Raptor Toolkit (i.e. Raptor-Dev and Raptor Cal) ($9600 worth of software!) due to our use of the Raptor GCM.
 
-Typically, we would program our electronic hardware using languages like C or Python to implement low-level driver code provided by manufacturers. The Raptor Toolchain simplifies this process, allowing us to use MATLAB Simulink (supplemented with additional Raptor libraries) to program the VCU. Additionally, we use Vector CANalyzer software to program the CAN bus and Kvaser Database Editor to create the DBC files.
+Typically, we would program our electronic hardware using languages like C or Python to implement low-level driver code provided by manufacturers. The Raptor Toolkit simplifies this process, allowing us to use MATLAB Simulink (supplemented with additional Raptor libraries) to program the VCU. Additionally, we use Vector CANalyzer software to program the CAN bus and Kvaser Database Editor to create the DBC files.
 
-### Getting Started: Setup Guide & Platform Compatibility
+#### Getting Started: Setup Guide & Platform Compatibility
 
 See the software setup guide [here](https://docs.google.com/document/d/1cnFTK1jpPUwSgk5_LYbEjfsr6MsOQiAcEhOZyKOdtkA). Please note that all Raptor tools are only compatible with Windows. For Mac users who wish to view and operate the Raptor software, we recommend using CAEN computers.
 
@@ -69,7 +74,7 @@ We make the DBC files based on the datasheets of components that are wired to th
 
 
 
-### Programming the VCU: MATLAB Simulink + Raptor Toolchain
+### Programming the VCU: MATLAB Simulink + Raptor ToolKit
 
 
 
