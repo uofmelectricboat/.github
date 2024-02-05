@@ -3,12 +3,12 @@
 ## Overview
 
 Main software projects on the University of Michigan Electric Boat team:
-* [VCU programming](#vcu-programming) (MATLAB Simulink, CANalyzer, Kvaser Database Editor, Raptor Toolkit)
+* [VCU programming](#vcu-programming)
   * [Programming Environment Overview](#programming-environment-overview)
   * [Making the CAN DBC Files: Kvaser Database Editor](#making-the-can-dbc-files-kvaser-database-editor)
   * [Programming the CAN Bus: CANalyzer](#programming-the-can-bus-canalyzer)
   * [Programming the VCU: MATLAB Simulink + Raptor Toolkit](#programming-the-vcu-matlab-simulink-and-raptor-toolkit)
-* [Driver display](#driver-display) (Qt, QML, C++)
+* [Driver display](#driver-display)
 * Website development (HTML/CSS, Javascript)
 * Debug display*
 * Shore display*
