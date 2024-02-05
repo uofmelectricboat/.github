@@ -7,7 +7,7 @@ Main software projects on the University of Michigan Electric Boat team:
   * [Programming Environment Overview](#programming-environment-overview)
   * [Making the CAN DBC Files: Kvaser Database Editor](#making-the-can-dbc-files-kvaser-database-editor)
   * [Programming the CAN Bus: CANalyzer](#programming-the-can-bus-canalyzer)
-  * [Programming the VCU: MATLAB Simulink + Raptor Toolkit](#programming-the-vcu-matlab-simulink-+-raptor-toolkit)
+  * [Programming the VCU: MATLAB Simulink + Raptor Toolkit](#programming-the-vcu-matlab-simulink-and-raptor-toolkit)
 * [Driver display](#driver-display) (Qt, QML, C++)
 * Website development (HTML/CSS, Javascript)
 * Debug display*
@@ -49,7 +49,7 @@ See the software setup guide [here](https://docs.google.com/document/d/1cnFTK1jp
 
 ### Making the CAN DBC Files: Kvaser Database Editor
 
-A CAN DBC file (CAN database) is a text file that contains information for decoding raw CAN bus data to 'physical values'. We use Kvaser Database Editor, which includes the ability to create and edit DBC files, append DBC files, and visualize the signal construction.
+A CAN DBC file (CAN database) is a text files that contains information for decoding raw CAN bus data to 'physical values'. We use Kvaser Database Editor, which includes the ability to create and edit DBC files, append DBC files, and visualize the signal construction.
 
 Useful links:
 * [CAN DBC file explained](https://www.csselectronics.com/pages/can-dbc-file-database-intro)
@@ -71,14 +71,13 @@ We make the DBC files based on the datasheets of components that are wired to th
 
 ### Programming the CAN Bus: CANalyzer
 
+TODO
 
+### Programming the VCU: MATLAB Simulink and Raptor ToolKit
 
-### Programming the VCU: MATLAB Simulink + Raptor ToolKit
+We use MATLAB Simulink with Raptor-DEV and Raptor-CAL to program the VCU. Importing our DBC files allows us to define the CAN messages and signals.
 
-
-
-
-
+TODO
 
 ## Driver Display
 
