@@ -61,17 +61,17 @@ A CAN DBC file (CAN database) is a text files that contains information for deco
 
 We make the DBC files based on the datasheets of components that are wired to the VCU.
 
-| Component | Owner | Datasheet | Notes |
-| :---- | :---- | :---- | :---- |
-| GPS | Controls | TODO | Speed |
-| Trim plate actuator | Controls | TODO |  |
-| Jack plate actuator | Controls | TODO |  |
-| Wing actuators (2) | Controls | TODO |  |
-| Inverters | Drivetrain | TODO | May be through the BMS rather than the VCU |
-| Steering wheel | Controls | TODO | Controls is working on making/sourcing a CAN-enabled wheel |
-| Cooling sensors | Cooling | TODO | Must record flow/temp/pressure |
-| Battery Management System (BMS) | Powertrain | TODO | Powertrain has it's own control unit (Orion BMS 2) with a completely different programming environment. It involves thermistors (6 per pack, with 12 packs), contactors, and chargers. The VCU may need to send signals to the contactors. |
-| VCU | Controls | [Link](https://drive.google.com/file/d/1WkTzCAFvSJtV45WaHHaHLx2UFPWbgUJL/view?usp=sharing) | May need to check the VCU's own datasheet |
+| Datasheet | Owner | Notes |
+| :---- | :---- | :---- |
+| GPS | Controls | Speed |
+| Trim plate actuator | Controls |  |
+| Jack plate actuator | Controls |  |
+| Wing actuators (2) | Controls |  |
+| Inverters | Drivetrain | May be through the BMS rather than the VCU |
+| Steering wheel | Controls | Controls is working on making/sourcing a CAN-enabled wheel |
+| Cooling sensors | Cooling | Must record flow/temp/pressure |
+| BMS | Powertrain | Powertrain has it's own control unit (Orion BMS 2) with a completely different programming environment. It involves thermistors (6 per pack, with 12 packs), contactors, and chargers. The VCU may need to send signals to the contactors. |
+| [VCU](https://drive.google.com/file/d/1WkTzCAFvSJtV45WaHHaHLx2UFPWbgUJL/view?usp=sharing) | Controls | May need to check the VCU's own datasheet |
 
 ### Programming the CAN Bus: CANalyzer
 
