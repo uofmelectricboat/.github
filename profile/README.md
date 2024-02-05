@@ -51,10 +51,13 @@ See the software setup guide [here](https://docs.google.com/document/d/1cnFTK1jp
 
 A CAN DBC file (CAN database) is a text files that contains information for decoding raw CAN bus data to 'physical values'. We use Kvaser Database Editor, which includes the ability to create and edit DBC files, append DBC files, and visualize the signal construction.
 
-Useful links:
+#### Useful Links
+
 * [CAN DBC file explained](https://www.csselectronics.com/pages/can-dbc-file-database-intro)
 * [Raw data to decimal converter](https://www.h-schmidt.net/FloatConverter/IEEE754.html)
 * [Snowfinkle DBC files](https://github.com/uofmelectricboat/Lightning-McSeas/tree/main/dbc%20files) (Summer 2023 PEP Competition)
+
+#### Datasheets
 
 We make the DBC files based on the datasheets of components that are wired to the VCU.
 
@@ -68,6 +71,7 @@ We make the DBC files based on the datasheets of components that are wired to th
 | Steering wheel | Controls | TODO | Controls is working on making/sourcing a CAN-enabled wheel |
 | Cooling sensors | Cooling | TODO | Must record flow/temp/pressure |
 | Battery Management System (BMS) | Powertrain | TODO | Powertrain has it's own control unit (Orion BMS 2) with a completely different programming environment. It involves thermistors (6 per pack, with 12 packs), contactors, and chargers. The VCU may need to send signals to the contactors. |
+| VCU | Controls | [Link](https://drive.google.com/file/d/1WkTzCAFvSJtV45WaHHaHLx2UFPWbgUJL/view?usp=sharing) | May need to check the VCU's own datasheet |
 
 ### Programming the CAN Bus: CANalyzer
 
