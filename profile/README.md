@@ -69,7 +69,7 @@ We make the DBC files based on the datasheets of components that are wired to th
 | Steering wheel | Controls | Controls is working on making/sourcing a CAN-enabled wheel |
 | [Cooling sensors](https://docs.google.com/spreadsheets/d/15f9kN0e133HEVDk-F0HdmYhkDNpvvALMN1A2owysBZE/edit#gid=1640551761) | Cooling | Must record flow/temp/pressure. Too many inputs for the VCU, we'll have to use an Arduino. |
 | [BMS](https://www.orionbms.com/manuals/utility_o2/) | Powertrain | Powertrain has it's own control unit (Orion BMS 2) with a completely different programming environment. It involves thermistors (6 per pack, with 12 packs), contactors, and chargers. The VCU may need to send signals to the contactors. |
-| [VCU](https://drive.google.com/file/d/1WkTzCAFvSJtV45WaHHaHLx2UFPWbgUJL/view?usp=sharing) | Controls | May need to check the VCU's own datasheet |
+| [VCU](https://drive.google.com/file/d/1WkTzCAFvSJtV45WaHHaHLx2UFPWbgUJL/view?usp=sharing) | Controls |  |
 
 ### Programming the VCU: MATLAB Simulink and Raptor ToolKit
 
