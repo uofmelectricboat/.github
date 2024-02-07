@@ -63,14 +63,12 @@ We make the DBC files based on the datasheets of components that are wired to th
 
 | Datasheet | Owner | Notes |
 | :---- | :---- | :---- |
-| GPS | Controls | Speed |
-| Trim plate actuator | Controls |  |
-| Jack plate actuator | Controls |  |
-| Wing actuators (2) | Controls |  |
-| Inverters | Drivetrain | May be through the BMS rather than the VCU |
+| [GPS](https://drive.google.com/file/d/1ul1OAEmG7b7VrABJoXp_SV_jphUSG7cG/view?usp=drive_link) | Controls | Speed |
+| [Actuators](https://drive.google.com/file/d/1GDaTBgGlo1CWdFGQUcA6tW-RRGx30Len/view?usp=drive_link) | Controls | Trim plate, jack plate, and wings (2) |
+| [Inverters](https://drive.google.com/file/d/18Th4eHXrSkIGqwOTOoMu3LJCJ8r8Z_f1/view?usp=drive_link) | Drivetrain | May be through the BMS rather than the VCU |
 | Steering wheel | Controls | Controls is working on making/sourcing a CAN-enabled wheel |
 | [Cooling sensors](https://docs.google.com/spreadsheets/d/15f9kN0e133HEVDk-F0HdmYhkDNpvvALMN1A2owysBZE/edit#gid=1640551761) | Cooling | Must record flow/temp/pressure. Too many inputs for the VCU, we'll have to use an Arduino. |
-| BMS | Powertrain | Powertrain has it's own control unit (Orion BMS 2) with a completely different programming environment. It involves thermistors (6 per pack, with 12 packs), contactors, and chargers. The VCU may need to send signals to the contactors. |
+| [BMS](https://www.orionbms.com/manuals/utility_o2/) | Powertrain | Powertrain has it's own control unit (Orion BMS 2) with a completely different programming environment. It involves thermistors (6 per pack, with 12 packs), contactors, and chargers. The VCU may need to send signals to the contactors. |
 | [VCU](https://drive.google.com/file/d/1WkTzCAFvSJtV45WaHHaHLx2UFPWbgUJL/view?usp=sharing) | Controls | May need to check the VCU's own datasheet |
 
 ### Programming the VCU: MATLAB Simulink and Raptor ToolKit
