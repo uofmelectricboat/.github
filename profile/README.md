@@ -4,9 +4,8 @@
 
 Main software projects on the University of Michigan Electric Boat team:
 * [VCU programming](#vcu-programming)
-  * [Programming Environment Overview](#programming-environment-overview)
-  * [Making the CAN DBC Files: Kvaser Database Editor](#making-the-can-dbc-files-kvaser-database-editor)
-  * [Programming the VCU: MATLAB Simulink + Raptor Toolkit](#programming-the-vcu-matlab-simulink-and-raptor-toolkit)
+  * [Creating DBC Files](#creating-dbc-files)
+  * [Programming the VCU](#programming-the-vcu)
   * [Debugging](#debugging)
 * [Driver display](#driver-display)
 * Website development (HTML/CSS, Javascript)
@@ -37,8 +36,6 @@ The Vehicle Control Unit (VCU) is essentially the central processing unit of the
 
 We use the [Raptor General Control Model GCM48](https://store.neweagle.net/shop/raptor/raptor-hardware/raptor-controllers-with-software/raptor-general-control-module-gcm48-2/) as our VCU. Note that you need a New Eagle account (which takes a few business days to get approved) to view the documentation on the New Eagle / New Eagle Wiki site.
 
-### Programming Environment Overview
-
 The electronic hardware components on our boat (like sensors and actuators) are programmed using software provided by New Eagle. We have free access to New Eagle’s Raptor Toolkit (i.e. Raptor-Dev and Raptor Cal) ($9600 worth of software!) due to our use of the Raptor GCM.
 
 Typically, we would program our electronic hardware using languages like C or Python to implement low-level driver code provided by manufacturers. The Raptor Toolkit simplifies this process, allowing us to use MATLAB Simulink (supplemented with additional Raptor libraries) to program the VCU. Additionally, we use Vector CANalyzer software to program the CAN bus and Kvaser Database Editor to create the DBC files.
@@ -47,9 +44,25 @@ Typically, we would program our electronic hardware using languages like C or Py
 
 See the software setup guide [here](https://docs.google.com/document/d/1cnFTK1jpPUwSgk5_LYbEjfsr6MsOQiAcEhOZyKOdtkA). Please note that all Raptor tools are only compatible with Windows. For Mac users who wish to view and operate the Raptor software, we recommend using CAEN computers.
 
-### Making the CAN DBC Files: Kvaser Database Editor
+### Creating DBC Files
 
-A CAN DBC file (CAN database) is a text files that contains information for decoding raw CAN bus data to 'physical values'. We use Kvaser Database Editor, which includes the ability to create and edit DBC files, append DBC files, and visualize the signal construction.
+A CAN DBC file (CAN database) is a text file that contains information for decoding raw CAN bus data to 'physical values'. We use Kvaser Database Editor, which includes the ability to create and edit DBC files, append DBC files, and visualize the signal construction.
+
+#### VCU I/O CAN Messages Masterlist
+
+To make our DBC files, we need each component's identification information and quantitative specifications, compiled in [**this masterlist**](https://docs.google.com/spreadsheets/d/1l9ZZ65pS-U9dvQTbAR1eJ-93yGe8JyaLVBbAq_j7IOM/edit?usp=sharing).
+
+Datasheets for each components are also compiled in the team Google Drive (in the Software subfolder) and below:
+
+| Datasheet | Owner | Notes |
+| :---- | :---- | :---- |
+| [GPS](https://drive.google.com/file/d/1ul1OAEmG7b7VrABJoXp_SV_jphUSG7cG/view?usp=drive_link) | Controls | Gets speed for driver display |
+| [Actuators](https://drive.google.com/file/d/1GDaTBgGlo1CWdFGQUcA6tW-RRGx30Len/view?usp=drive_link) | Controls | Trim plate, jack plate, and wings (2) |
+| [Inverters](https://drive.google.com/file/d/18Th4eHXrSkIGqwOTOoMu3LJCJ8r8Z_f1/view?usp=drive_link) | Drivetrain | - |
+| Steering wheel | Controls | TBD, controls is making/sourcing a CAN-enabled wheel |
+| [Cooling sensors](https://docs.google.com/spreadsheets/d/15f9kN0e133HEVDk-F0HdmYhkDNpvvALMN1A2owysBZE/edit#gid=1640551761) | Cooling | Gets flow/temp/pressure for logging. Too many inputs for VCU, we'll have to extend it with an Arduino. |
+| [BMS](https://www.orionbms.com/manuals/utility_o2/) | Powertrain | Powertrain has it's own control unit (Orion BMS 2) with a completely different programming environment. It involves thermistors (6 per pack, with 12 packs), contactors, and chargers. The VCU may need to send signals to the contactors. |
+| [VCU](https://drive.google.com/file/d/1WkTzCAFvSJtV45WaHHaHLx2UFPWbgUJL/view?usp=sharing) | Controls | - |
 
 #### Useful Links
 
@@ -57,21 +70,7 @@ A CAN DBC file (CAN database) is a text files that contains information for deco
 * [Raw data to decimal converter](https://www.h-schmidt.net/FloatConverter/IEEE754.html)
 * [Snowfinkle DBC files](https://github.com/uofmelectricboat/Lightning-McSeas/tree/main/dbc%20files) (Summer 2023 PEP Competition)
 
-#### Specifications
-
-To make the DBC files, we need each component's identification information and quantitative specifications, compiled in [this masterlist](https://docs.google.com/spreadsheets/d/1l9ZZ65pS-U9dvQTbAR1eJ-93yGe8JyaLVBbAq_j7IOM/edit?usp=sharing). Datasheets for each components are also compiled in the team Google Drive (in the Software subfolder) and below:
-
-| Datasheet | Owner | Notes |
-| :---- | :---- | :---- |
-| [GPS](https://drive.google.com/file/d/1ul1OAEmG7b7VrABJoXp_SV_jphUSG7cG/view?usp=drive_link) | Controls | Gets speed for driver display |
-| [Actuators](https://drive.google.com/file/d/1GDaTBgGlo1CWdFGQUcA6tW-RRGx30Len/view?usp=drive_link) | Controls | Trim plate, jack plate, and wings (2) |
-| [Inverters](https://drive.google.com/file/d/18Th4eHXrSkIGqwOTOoMu3LJCJ8r8Z_f1/view?usp=drive_link) | Drivetrain | TBD, may be through the BMS rather than the VCU |
-| Steering wheel | Controls | TBD, controls is making/sourcing a CAN-enabled wheel |
-| [Cooling sensors](https://docs.google.com/spreadsheets/d/15f9kN0e133HEVDk-F0HdmYhkDNpvvALMN1A2owysBZE/edit#gid=1640551761) | Cooling | Gets flow/temp/pressure for logging. Too many inputs for VCU, we'll have to extend it with an Arduino. |
-| [BMS](https://www.orionbms.com/manuals/utility_o2/) | Powertrain | Powertrain has it's own control unit (Orion BMS 2) with a completely different programming environment. It involves thermistors (6 per pack, with 12 packs), contactors, and chargers. The VCU may need to send signals to the contactors. |
-| [VCU](https://drive.google.com/file/d/1WkTzCAFvSJtV45WaHHaHLx2UFPWbgUJL/view?usp=sharing) | Controls |  |
-
-### Programming the VCU: MATLAB Simulink and Raptor ToolKit
+### Programming the VCU
 
 We use MATLAB Simulink with Raptor-DEV and Raptor-CAL to program the VCU. Importing our DBC files allows us to define the CAN messages and signals.
 
