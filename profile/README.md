@@ -57,9 +57,9 @@ A CAN DBC file (CAN database) is a text files that contains information for deco
 * [Raw data to decimal converter](https://www.h-schmidt.net/FloatConverter/IEEE754.html)
 * [Snowfinkle DBC files](https://github.com/uofmelectricboat/Lightning-McSeas/tree/main/dbc%20files) (Summer 2023 PEP Competition)
 
-#### Datasheets
+#### Specifications
 
-We make the DBC files based on the datasheets of components that are wired to the VCU.
+To make the DBC files, we need each component's identification information and quantitative specifications, compiled in [this masterlist](https://docs.google.com/spreadsheets/d/1l9ZZ65pS-U9dvQTbAR1eJ-93yGe8JyaLVBbAq_j7IOM/edit?usp=sharing). Datasheets for each components are also compiled in the team Google Drive (in the Software subfolder) and below:
 
 | Datasheet | Owner | Notes |
 | :---- | :---- | :---- |
