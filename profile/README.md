@@ -4,6 +4,7 @@
 
 Main software projects on the University of Michigan Electric Boat team:
 * [VCU programming](#vcu-programming)
+  * [Software Setup Guide](#software-setup-guide)
   * [Creating DBC Files](#creating-dbc-files)
   * [Programming the VCU](#programming-the-vcu)
   * [Debugging](#debugging)
@@ -40,9 +41,11 @@ The electronic hardware components on our boat (like sensors and actuators) are 
 
 Typically, we would program our electronic hardware using languages like C or Python to implement low-level driver code provided by manufacturers. The Raptor Toolkit simplifies this process, allowing us to use MATLAB Simulink (supplemented with additional Raptor libraries) to program the VCU. Additionally, we use Vector CANalyzer software to program the CAN bus and Kvaser Database Editor to create the DBC files.
 
-#### Getting Started: Setup Guide & Platform Compatibility
+### Software Setup Guide
 
-See the software setup guide [here](https://docs.google.com/document/d/1cnFTK1jpPUwSgk5_LYbEjfsr6MsOQiAcEhOZyKOdtkA). Please note that all Raptor tools are only compatible with Windows. For Mac users who wish to view and operate the Raptor software, we recommend using CAEN computers.
+See the software setup guide [here](https://docs.google.com/document/d/1cnFTK1jpPUwSgk5_LYbEjfsr6MsOQiAcEhOZyKOdtkA). Please note that all Raptor tools are only compatible with Windows.
+
+For Mac users who wish to view and operate the Raptor software, we recommend using CAEN computers or a Virtual Machine, such as UTM. A guide for running Windows on UTM can be found [here](https://docs.getutm.app/guides/windows/).
 
 ### Creating DBC Files
 
