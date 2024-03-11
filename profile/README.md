@@ -1,8 +1,8 @@
 # UMEB Software Projects
 
 Main software projects on the University of Michigan Electric Boat team:
-* VCU Programming: https://github.com/uofmelectricboat/tide-vcu)
-* Driver Display: https://github.com/uofmelectricboat/tide-main-display
+* VCU Programming ([tide-vcu](https://github.com/uofmelectricboat/tide-vcu))
+* Driver Display ([tide-main-display](https://github.com/uofmelectricboat/tide-main-display))
 * Website Development
 * Debug Display*
 * Shore Display*
