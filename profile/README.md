@@ -2,11 +2,11 @@
 
 Main software projects on the University of Michigan Electric Boat team:
 * [VCU Programming](https://github.com/uofmelectricboat/tide-vcu)
-* [Driver display](https://github.com/uofmelectricboat/tide-main-display)
-* Website development
-* Debug display*
-* Shore display*
-* Data analytics*
+* [Driver Display](https://github.com/uofmelectricboat/tide-main-display)
+* Website Development
+* Debug Display*
+* Shore Display*
+* Data Analytics*
 
 Projects marked with an asterisk are not yet started.
 
