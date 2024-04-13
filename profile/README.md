@@ -5,6 +5,8 @@ Main software projects on the University of Michigan Electric Boat team:
     * Database CAN (DBC) files: [tide-dbc](https://github.com/uofmelectricboat/tide-dbc)
 * Driver display: [tide-main-display](https://github.com/uofmelectricboat/tide-main-display)
 * Website: [umeb.engin.umich.edu](https://github.com/uofmelectricboat/umeb.engin.umich.edu)
+* Cockpit & cooling microcontrollers*
+* Telemetry*
 * Debug display*
 * Shore display*
 * Data analytics*
