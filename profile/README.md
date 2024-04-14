@@ -6,7 +6,7 @@ Main software projects on the University of Michigan Electric Boat team:
 * Driver display: [tide-main-display](https://github.com/uofmelectricboat/tide-main-display)
 * Website: [umeb.engin.umich.edu](https://github.com/uofmelectricboat/umeb.engin.umich.edu)
 * Cockpit & cooling microcontrollers (MCUs): [tide-mcu](https://github.com/uofmelectricboat/tide-mcu)
-* Telemetry*
+* Telemetry: [tide-telemetry](https://github.com/uofmelectricboat/tide-telemetry)
 * Debug display*
 * Shore display*
 * Data analytics*
