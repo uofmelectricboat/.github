@@ -14,6 +14,7 @@ Main software projects on the University of Michigan Electric Boat team:
 Projects marked with an asterisk are not yet started.
 
 Questions? Contact these team members:
-* Megan Miller (megmil), Software Lead
-* Michael Sharashenidze (msharash), Electrical Lead
-* Adam Lake (adamlake), Controls Lead
+* David Anapolsky (danapolsUM), Computing / Driver Systems Lead
+* Andrew Dailey (AndrewD453), Electrical Director
+* Raymond Yuan (yraymond26), Computing Lead
+
