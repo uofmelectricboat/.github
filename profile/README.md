@@ -14,7 +14,3 @@ Main software projects on the University of Michigan Electric Boat team:
 Projects marked with an asterisk are not yet started.
 
 Questions? Contact these team members:
-* David Anapolsky (danapolsUM), Computing / Driver Systems Lead
-* Andrew Dailey (AndrewD453), Electrical Director
-* Raymond Yuan (yraymond26), Computing Lead
-
